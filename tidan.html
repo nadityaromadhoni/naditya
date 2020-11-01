@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<marquee>Hello! My Name Is Naditya Romadhoni</marquee>
+		<h1 style="color:tomato">Saya sedang belajar JavaScript</h1>
+		<p> - 1500</p>
+		<p> - 250</p>
+		<p> - 50</p>
+		
+		<button type="button" onclick="jumlah(1500, 250, 50)"> Jumlah </button>
+		<button type="button" onclick="kurang(1500, 250, 50)"> Kurang </button>
+		<button type="button" onclick="kali(1500, 250, 50)"> Kali </button>
+		<button type="button" onclick="bagi(1500, 250, 50)"> Bagi </button>
+
+		<p>Hasilnya =<span id="hasil"></span></p>
+
+	<script>
+		function jumlah(a, b, c) {
+		var d = a + b + c;
+		document.getElementById("hasil").innerHTML = d;
+		}
+		
+		function kurang(a, b, c) {
+		var d = a - b - c;
+			document.getElementById("hasil").innerHTML = d;
+		}
+		
+		function kali(a, b, c) {
+		var d = a * b * c;
+		document.getElementById("hasil").innerHTML = d;
+		}
+
+		function bagi(a, b, c) {
+		var d = a / b / c;
+		document.getElementById("hasil").innerHTML = d;
+		}
+
+	</script>
+
+	</body>
+</html>
